@@ -50,7 +50,7 @@ var projCardInfo = [
     img1:proj4img,
     img2:proj4img2,
     img3:proj4img3,
-    link:'https://vercel.com/adityathyagaraju/api-server-h3ag/fMQHVf3q5ACQRxD7YWqJrkhfwAC3',
+    link:'https://api-server-aditya-thyagaraju.vercel.app/',
     desc:'A NEXT JS application, developed to render a web service to check the similarity between two texts using openai, it provides developers a service accessible using API KEYS, uses planet scale database'
   },
   {
