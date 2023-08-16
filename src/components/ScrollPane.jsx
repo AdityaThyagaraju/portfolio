@@ -4,6 +4,7 @@ import Project from "./Project";
 import Divider from "./Divider";
 import Skills from "./Skills";
 import Contact from "./Contact";
+import Certification from "./Certification";
 
 function ScrollPane() {
   return (
@@ -15,6 +16,8 @@ function ScrollPane() {
         <Project />
         <Divider heading="Skills" />
         <Skills />
+        <Divider heading="Certifications" />
+        <Certification />
         <Divider />
         <Contact />
       </div>

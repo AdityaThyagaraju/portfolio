@@ -13,15 +13,14 @@ setTimeout(function(){
   $("#load").fadeOut(3000);
   setTimeout(function(){
       $("#body").removeClass("none");
-      const horizontalPane = document.querySelector(".Horizontal-scroll");
-      console.log(horizontalPane.offsetWidth)
+      const horizontalPane = document.querySelectorAll(".Horizontal-scroll");
 
       function getScrollAmount() {
-        let paneWidth = horizontalPane.scrollWidth;
+        let paneWidth = horizontalPane[0].scrollWidth;
         return -(paneWidth - window.innerWidth)
       }
 
-      const tween = gsap.to(horizontalPane,{
+      const tween = gsap.to(horizontalPane[0],{
         x:getScrollAmount,
         duration:3,
         ease:"none"
@@ -36,7 +35,28 @@ setTimeout(function(){
         scrub:1,
         invalidateOnRefresh:true
       })
+
+      function getScrollAmount1() {
+        let paneWidth = horizontalPane[1].scrollWidth;
+        return -(paneWidth - window.innerWidth)
+      }
+
+      const tween1 = gsap.to(horizontalPane[1],{
+        x:getScrollAmount1,
+        duration:3,
+        ease:"none"
+      });
+
+      ScrollTrigger.create({
+        trigger:"#proj-section",
+        start:"top -5%",
+        end: ()=>`+=${getScrollAmount1()*-1}`,
+        pin:true,
+        animation:tween1,
+        scrub:1,
+        invalidateOnRefresh:true
+      })
   },3000)
-},5000);
+},3000);
 
 

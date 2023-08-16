@@ -132,10 +132,11 @@ body::-webkit-scrollbar-thumb {
       align-items: center;
     }
     .text{
+      text-align: center;
       margin-top: 230px;
       color:rgb(25, 24, 24); 
       font-family: 'Cormorant Garamond', serif;
-      line-height: 1.5em;
+      font-size: larger;
     }
 
     .scroll-pane{
@@ -263,7 +264,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
   }
 
-  #vid-section{
+  #vid-section,#proj-section{
     background-color: black;
   }
 
@@ -294,16 +295,22 @@ body::-webkit-scrollbar-thumb {
   } */
 
   .carousel-div{
+    width: fit-content;
     padding: 20px;
     padding-top: 30px;
     background: rgb(25, 25, 25);
     color: #ffffff;
     box-shadow: 0 0 30px 30px rgba(244,237,217,0.75);
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 
   .proj-img{
-    width: 100%;
+    width: 500px;
     height: 300px;
     transition: opacity 1s;
   }
@@ -461,6 +468,25 @@ form input,form textarea{
 
 form input{
   height:3rem;
+}
+
+.form-submit-btn{
+    width: 300px;
+    color: rgb(255, 231, 190);
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 3px;
+    background: rgb(21, 21, 21);
+    text-decoration: none !important;
+    transition: all 1s;
+}
+
+.form-submit-btn:hover{
+    background-color:  rgb(255, 231, 190);
+    color: rgb(21, 21, 21);
 }
 
 ::placeholder{

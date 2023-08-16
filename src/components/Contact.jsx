@@ -7,17 +7,18 @@ export default function Contact(){
       <div><i className="cib-gmail"></i>adityauday2002@gmail.com</div>
       <div><i className="fa-solid fa-phone"></i>0123456789</div>
       <div className="social-media">
-      <a className="cib-linkedin"></a>
-      <a className="cib-facebook"></a>
+      <a className="cib-linkedin" href="www.linkedin.com/in/aditya-thyagaraju-162884253"></a>
+      <a className="cib-github" href="https://github.com/AdityaThyagaraju"></a>
       <a className="cib-instagram"></a>
       <a className="cib-twitter"></a>
       </div>
     </div>
     <div className="col-sm-6">
-      <form>
+      <form method="POST" action="https://sheetdb.io/api/v1/tjh5dacxltuol">
         <input placeholder="Name" name="name" ></input>
         <input placeholder="E-mail" name="email"></input>
-        <textarea rows={4} placeholder="Enter your message" name="msg"></textarea>
+        <textarea rows={4} placeholder="Enter your message" name="message"></textarea>
+        <button type="submit" className="form-submit-btn">Submit</button>
       </form>
     </div>
   </div>

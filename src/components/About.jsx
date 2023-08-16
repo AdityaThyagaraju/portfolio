@@ -27,11 +27,11 @@ function About(){
       on group projects.<br></br> Energetic student eager to apply
       knowledge of project coordination and completion to achieve
       company goals.<br></br> Dedicated to working hard to make positive
-      contributions. Motivated individual with strong work ethic and
-      working independently. Strong organizational and team
+      contributions.<br></br> Motivated individual with strong work ethic and
+      working independently.<br></br> Strong organizational and team
       collaboration skills with experience in improving processes.
     </p>
-    <a href="#" className="cv-link mx-auto mt-5 d-block">
+    <a href="https://drive.google.com/uc?id=1SJRQn0n1BopuTZ-qIFsTD2aQ_B7m8R5L" className="cv-link mx-auto mt-5 d-block">
       Download CV
     </a>
   </div>
