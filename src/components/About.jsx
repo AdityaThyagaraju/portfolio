@@ -4,7 +4,7 @@ import dp from "../images/jeremy-bishop-_CFv3bntQlQ-unsplash.jpg";
 
 function About(){
     return <div className="section p-5 width-sm">
-    <div className="row">
+    <div className="row d-flex justify-content-center">
       <div className="col-lg-6 p-3 name-qual">
         <div
           className="info"
@@ -14,9 +14,9 @@ function About(){
           <h3>B E (Computer Science)</h3>
         </div>
       </div>
-      <div className="col-lg-6 pd-2 d-flex justify-content-center align-text-center">
+      {/* <div className="col-lg-6 pd-2 d-flex justify-content-center align-text-center">
         <img src={dp} id="dp"></img>
-      </div>
+      </div> */}
     </div>
     <p className="container text">
       Effective Student committed to learning, developing skills in
